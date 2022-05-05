@@ -44,7 +44,7 @@ jobs:
             [
               'main',
               {name: 'beta', prerelease: true},
-              {name: 'alpha', prerelease: true}
+              {name: 'dev', prerelease: true}
             ]
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
