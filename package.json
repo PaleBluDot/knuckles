@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "Internal design system.",
 	"author": "Pavel Sanchez",
-	"repository": "https://github.com/PaleBluDot/sonic-node",
+	"repository": "https://github.com/PaleBluDot/knuckles",
 	"license": "MIT",
 	"private": true,
 	"scripts": {
