@@ -45,8 +45,9 @@ jobs:
             @semantic-release/github@8.0.4
           branches: |
             [
+              'main',
               {name: 'beta', prerelease: true},
-              {name: 'dev', prerelease: true},
+              {name: 'dev', prerelease: true}
             ]
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
