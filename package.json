@@ -7,9 +7,10 @@
 	"license": "MIT",
 	"private": true,
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 0",
-		"build": "echo \"Success: build complete\" && exit 0",
-		"commit": "git cz"
+		"commit": "git cz",
+		"dev": "npx sass --watch src/style.scss --style=expanded ./dist/style.dev.css",
+		"build": "npx sass src/style.scss --style=compressed ./dist/style.min.css",
+		"test": "echo \"Error: no test specified\" && exit 0"
 	},
 	"devDependencies": {
 		"@palebludot/eslint-config": "^0.4.1",
@@ -37,5 +38,8 @@
 			"pre-commit-msg": "exec < /dev/tty && node_modules/.bin/cz --hook || true"
 		}
 	},
-	"prettier": "@palebludot/prettier-config"
+	"prettier": "@palebludot/prettier-config",
+	"dependencies": {
+		"sass": "^1.51.0"
+	}
 }
