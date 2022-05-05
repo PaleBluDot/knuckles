@@ -1,5 +1,5 @@
 {
-	"branches": ["beta", "dev"],
+	"branches": ["main", "beta"],
 	"plugins": [
 		[
 			"@semantic-release/commit-analyzer",
